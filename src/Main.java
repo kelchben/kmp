@@ -17,7 +17,7 @@ public class Main {
         String[] hi = new String[1];
         String textbeispiel = "22ull222ul22u";
         String ausschnitt = "2";
-
+/*
         try {
             textbeispiel = lesezeit.readbyline(hi);}
         catch (Exception e) {
@@ -25,13 +25,16 @@ public class Main {
             System.exit(0);
         }
         System.out.println(textbeispiel);
+        */
+
+
         try {
-             lesezeit2.stats("text.txt");}
+             lesezeit2.rd_lines("text.txt", "22");}
         catch (Exception e) {
             System.out.println("Errorstats:(");
             System.exit(0);
         }
-        farbsuche.suchundfaerb(textbeispiel, ausschnitt);
+        System.out.println(farbsuche.suchundfaerb(textbeispiel, ausschnitt));
 
 
         //suche.searchhier(textbeispiel, ausschnitt);
@@ -43,8 +46,8 @@ public class Main {
 
         }*/
         System.out.println("");
-     //   colorize farbe = new colorize();
-     //   farbe.faerben((char)65);
+        colorize farbe = new colorize();
+        System.out.println(farbe.faerbString((char)65));
     //    String wasfarbe = "asdfghhkk";
     //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Länge");
      //   int[] orte = {6,7,8,9};

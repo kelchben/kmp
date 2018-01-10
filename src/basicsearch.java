@@ -24,7 +24,7 @@ public class basicsearch {
                 int[] neueListe = new int[liste.length + 1];
                 for(int y=0;y < liste.length;y++)
                     {neueListe[y] = liste[y];}
-                neueListe[neueListe.length-1] = i;
+                neueListe[neueListe.length-1] = i+1;
                 liste = neueListe;
 
             }
