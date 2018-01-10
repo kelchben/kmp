@@ -1,6 +1,10 @@
 public class hsms {
 
         public static void main(String[] args) {
+            basicsearch suche = new basicsearch();
+           String textbeispiel = "2hallo2waslos2";
+           String ausschnitt = "2";
+           suche.search(textbeispiel, ausschnitt);
     Main dings = new Main();
     String[] hi = new String[1];
     dings.main(hi);
