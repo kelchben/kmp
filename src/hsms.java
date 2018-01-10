@@ -9,5 +9,6 @@ public class hsms {
     String[] hi = new String[1];
     dings.main(hi);
             System.out.println("Hello World!1");
+            System.out.println((char)97);
         }
 }
