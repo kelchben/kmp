@@ -27,7 +27,7 @@ public class Main {
 
 
         try {
-             lesezeit2.rd_lines("text.txt", "22");}
+             lesezeit2.rd_lines(args[1],args[0]);}
         catch (Exception e) {
             System.out.println("Errorstats:(");
             System.exit(0);

@@ -5,7 +5,6 @@ public class searchandcolor {
     public String suchundfaerb(String text, String muster) {
         String gesuchtundfaerbt = new String();
         basicsearch suche = new basicsearch();
-        ausleser lesezeit = new ausleser();
         colorize farbe = new colorize();
         String[] hi = new String[1];
 
