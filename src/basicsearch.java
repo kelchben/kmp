@@ -1,8 +1,13 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Created by kcots on 10.01.2018.
  */
 public class basicsearch {
-    public static void search(String text, String muster) {
+    public static int[] search(String text, String muster) {
+        int[] liste = new int[1];
+
         int i = 0;
         int j;
         int n = text.length();
@@ -15,5 +20,5 @@ public class basicsearch {
             if (j == m) System.out.println("hier" + i);
             i++;
         }
-    }
+    return liste;}
 }
