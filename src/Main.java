@@ -47,9 +47,9 @@ public class Main {
         colorize farbe = new colorize();
         System.out.println(farbe.faerbString((char)65));
     //    String wasfarbe = "asdfghhkk";
-    //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Länge");
+    //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Laenge");
      //   int[] orte = {6,7,8,9};
-    //    System.out.println("orte hat" + orte.length + "länge");
+    //    System.out.println("orte hat" + orte.length + "laenge");
     //    farbe.faerbens(wasfarbe, orte);
 
       /*  Main dings = new Main();
