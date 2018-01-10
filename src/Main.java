@@ -12,15 +12,23 @@ public class Main {
 
         basicsearch suche = new basicsearch();
         ausleser lesezeit = new ausleser();
+        ausleser2 lesezeit2 = new ausleser2();
         searchandcolor farbsuche = new searchandcolor();
-
         String[] hi = new String[1];
         String textbeispiel = "22ull222ul22u";
-        String ausschnitt = "pen";
+        String ausschnitt = "2";
+
         try {
             textbeispiel = lesezeit.readbyline(hi);}
         catch (Exception e) {
             System.out.println("Error2!");
+            System.exit(0);
+        }
+        System.out.println(textbeispiel);
+        try {
+             lesezeit2.stats("text.txt");}
+        catch (Exception e) {
+            System.out.println("Errorstats:(");
             System.exit(0);
         }
         farbsuche.suchundfaerb(textbeispiel, ausschnitt);
@@ -35,13 +43,13 @@ public class Main {
 
         }*/
         System.out.println("");
-        colorize farbe = new colorize();
-        farbe.faerben((char)65);
-        String wasfarbe = "asdfghhkk";
-        System.out.println("Wasfarbe hat " + wasfarbe.length() + "Länge");
-        int[] orte = {6,7,8,9};
-        System.out.println("orte hat" + orte.length + "länge");
-        farbe.faerbens(wasfarbe, orte);
+     //   colorize farbe = new colorize();
+     //   farbe.faerben((char)65);
+    //    String wasfarbe = "asdfghhkk";
+    //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Länge");
+     //   int[] orte = {6,7,8,9};
+    //    System.out.println("orte hat" + orte.length + "länge");
+    //    farbe.faerbens(wasfarbe, orte);
 
       /*  Main dings = new Main();
         String[] hi = new String[1];
