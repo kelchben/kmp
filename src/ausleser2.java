@@ -8,9 +8,7 @@ import java.util.Scanner;
 
 import static java.awt.SystemColor.text;
 
-/**
- * Created by kcots on 10.01.2018.
- */
+
 public class ausleser2 {
 
 
@@ -22,7 +20,7 @@ public class ausleser2 {
 
 
 
-    public static void rd_lines(String filename, String suchstring){
+    public void rd_lines(String filename, String suchstring){
 
         // Location of file to read
         File file = new File(filename);

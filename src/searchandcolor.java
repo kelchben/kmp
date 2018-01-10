@@ -2,7 +2,7 @@
  * Created by kcots on 10.01.2018.
  */
 public class searchandcolor {
-    public static String suchundfaerb(String text, String muster) {
+    public String suchundfaerb(String text, String muster) {
         String gesuchtundfaerbt = new String();
         basicsearch suche = new basicsearch();
         ausleser lesezeit = new ausleser();

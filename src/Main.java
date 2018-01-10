@@ -8,10 +8,8 @@ import java.io.FileWriter;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-
-
         basicsearch suche = new basicsearch();
-        ausleser lesezeit = new ausleser();
+        //ausleser lesezeit = new ausleser();
         ausleser2 lesezeit2 = new ausleser2();
         searchandcolor farbsuche = new searchandcolor();
         String[] hi = new String[1];
