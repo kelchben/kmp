@@ -4,7 +4,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         naiveSearch suche = new naiveSearch();
-        //ausleser lesezeit = new ausleser();
+
         constructOutput lesezeit2 = new constructOutput();
         searchandcolor farbsuche = new searchandcolor();
         String[] hi = new String[1];
