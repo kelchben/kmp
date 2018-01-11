@@ -1,7 +1,7 @@
 
 public class searchandcolor {
     /**
-     * Verbindet Such- und Einfärbtätigkeiten
+     * Verbindet Such- und Einfärbtaetigkeiten
      */
     public String suchundfaerb(String text, String muster) {
         String gesuchtundfaerbt = new String();

@@ -17,8 +17,8 @@ public class constructOutput {
     }
 
     /**
-     * rd_lines liest die Datei zeilenweise aus und prüft, ob der Suchstring vorhanden ist.
-     * Schließlich wird die Ausgabe konstruiert.
+     * rd_lines liest die Datei zeilenweise aus und prueft, ob der Suchstring vorhanden ist.
+     * Schliesslich wird die Ausgabe konstruiert.
      */
     public void rd_lines(String filename, String suchstring){
 
