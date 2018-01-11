@@ -48,7 +48,9 @@ public class Main {
         colorize farbe = new colorize();
         System.out.println(farbe.faerbString((char)65));
         preprocess ppp = new preprocess();
+        kmp suche = new kmp();
 
+        System.out.println(Arrays.toString(ppp.pp("ababaa")));
         System.out.println(Arrays.toString(ppp.pp("ababaa")));
     //    String wasfarbe = "asdfghhkk";
     //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Laenge");
