@@ -1,16 +1,5 @@
-import org.junit.Test;
-
-import static junit.framework.TestCase.assertEquals;
-
 public class colorize {
 
-    @Test
-    public void istBuchstabeRichtigGefaerbt() {
-        colorize tester = new colorize(); // MyClass is tested
-
-        // assert statements
-        assertEquals("\u001B[30;47m" + 'u' + "\u001B[0m", tester.ansiColorEscapeString('u'));
-    }
 
     public static void faerben(char buchstabe) {
         System.out.print("\u001B[30;47m" + buchstabe + "\u001B[0m");
