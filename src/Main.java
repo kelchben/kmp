@@ -29,7 +29,7 @@ public class Main {
             System.exit(0);
         }
 
-        preprocess kmpPreprocess = new preprocess();
+      /*  preprocess kmpPreprocess = new preprocess();
         kmp kmpsuche = new kmp();
         colorize farbi = new colorize();
 
@@ -40,7 +40,7 @@ public class Main {
             System.out.println(vorkommnisse.get(i));
         } ;
         System.out.println(        farbi.ansiColorEscapeFoundKmp("asdfghjkl", 3, 3));
-
+*/
     //    System.out.println(farbsuche.suchundfaerb(textbeispiel, ausschnitt));
 
 
