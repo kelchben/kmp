@@ -27,25 +27,25 @@ public class Main {
             System.out.println("Errorstats:(");
             System.exit(0);
         }
-        System.out.println(farbsuche.suchundfaerb(textbeispiel, ausschnitt));
+    //    System.out.println(farbsuche.suchundfaerb(textbeispiel, ausschnitt));
 
 
         //suche.naiveSearchPrint(textbeispiel, ausschnitt);
-        suche.naiveSearchPrint(textbeispiel, ausschnitt);
+    //    suche.naiveSearchPrint(textbeispiel, ausschnitt);
     // int[] ergebnis =   suche.naiveSearchList(textbeispiel, ausschnitt);
 
       /*  for (int x = 0; x < ergebnis.length; x++){
             System.out.println(Arrays.toString(ergebnis));
 
         }*/
-        System.out.println("");
-        colorize farbe = new colorize();
-        System.out.println(farbe.ansiColorEscapeString((char)65));
-        preprocess ppp = new preprocess();
-        kmp suchi = new kmp();
+     //   System.out.println("");
+     //   colorize farbe = new colorize();
+      //  System.out.println(farbe.ansiColorEscapeString((char)65));
+     //   preprocess ppp = new preprocess();
+     //   kmp suchi = new kmp();
 
-        System.out.println(Arrays.toString(ppp.preprocessWord("ababaa")));
-        suchi.kmpSearch("erere", "ere", ppp.preprocessWord("ere"));
+      //  System.out.println(Arrays.toString(ppp.preprocessWord("ababaa")));
+      //  suchi.kmpSearch("erere", "ere", ppp.preprocessWord("ere"));
     //    String wasfarbe = "asdfghhkk";
     //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Laenge");
      //   int[] orte = {6,7,8,9};
