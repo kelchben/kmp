@@ -36,7 +36,7 @@ public class ausleser2 {
                 zeile++;
                 if (suchi.search(line, suchstring).length != 0){
                     for (int h = 0; h < suchi.search(line, suchstring).length; h++){
-                        System.out.println("Zeilennummer: "+ zeile + "  Spaltennummer:" + suchi.search(line, suchstring)[h]+ "  Zeilentext " +
+                        System.out.println(zeile + ":" + suchi.search(line, suchstring)[h]+ ": " +
                                 mali.suchundfaerb(line,suchstring)    );
                     }
 
