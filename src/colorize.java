@@ -3,7 +3,8 @@ import java.util.List;
 public class colorize {
 
     /**
-     * Mit ansiColorEscapeString lassen sich einzelne chars mit einer Faerbung versehen.
+     * Mit ansiColorEscapeString lassen sich einzelne chars mit einer Faerbung versehen. Das ist im Prozess des
+     * Einfaerbens wichtig, da man viel faerben muss.
      */
     public static String ansiColorEscapeString(char buchstabe) {
         return("\u001B[30;47m" + buchstabe + "\u001B[0m");
@@ -11,7 +12,7 @@ public class colorize {
 
     /**
      * Mit ansiColorEscapeFoundKmp lassen sich per Suchalgorithmus gefundene Textzeilen
-     * mit einer Faerbung versehen.
+     * mit dort mit einer Faerbung versehen, wo sie gefunden wurden.
      */
     public static String ansiColorEscapeFoundKmp(String ausgabe, int farbStelle, int musterLaenge) {
         String gefaerbt = new String();

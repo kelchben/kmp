@@ -26,13 +26,19 @@ public class constructOutputTest {
     public void out(){
 
     }
+
+    /**
+     * Hier wird getestet, ob die Funktion richtig laeuft. Tut sie.
+     * */
     @Test
     public void stats_lines() throws Exception {
         constructOutput stats = new constructOutput();
         stats.stats_lines("loremipsum.txt");
         assertEquals("11", outContent.toString());
     }
-
+    /**
+     * Wird auch die ANSI-Escapesequenz ordentlich dargestellt? Hier wird es geprueft.
+     * */
     @Test
     public void rd_lines() throws Exception{
         constructOutput rdline = new constructOutput();

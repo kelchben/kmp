@@ -18,15 +18,16 @@ public class colorizeTest {
         System.setOut(new PrintStream(outContent));
         System.setErr(new PrintStream(errContent));
     }
+    /**
+     * Dieser Test testet, ob die Methode die gewuenschten mal ordentlich einfaerbt. Das ist wichtig,
+     * damit alles am Ende ordentlich eingefaerbt ist.
+     */
     @Test
     public void ansiColorEscapeString() throws Exception {
         colorize tester = new colorize();
         assertEquals("\u001B[30;47m" + 'u' + "\u001B[0m", tester.ansiColorEscapeString('u'));
         }
 
-    @Test
-    public void ansiColorEscapeFoundKmp() throws Exception {
-    }
 
     @After
     public void cleanUpStreams() {

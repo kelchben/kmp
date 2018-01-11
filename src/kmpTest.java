@@ -27,7 +27,10 @@ public class kmpTest {
         System.setOut(null);
         System.setErr(null);
     }
-
+    /**
+     * Die KMP-Funktion gibt es in zwei unterschiedlichen Ausfuehrungen. Hier wird die getestet, die lediglich die
+     * sout ansteuert.
+     * */
     @Test
     public void kmpSearch() throws Exception {
         kmp suchi = new kmp();
@@ -40,7 +43,9 @@ public class kmpTest {
 
 
     }
-
+    /**
+     * Hier wird getestet, ob die kmp-funktion das gewuenschte Format, eine Liste voller Integers einhaelt.
+     * */
     @Test
     public void kmpSearchList() throws Exception {
         kmp suchi = new kmp();

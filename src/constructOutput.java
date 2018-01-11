@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class constructOutput {
 
     /**
-     * stats_lines gibt die Anzahl der Zeilen der eingelesenen Textdatei wieder
+     * stats_lines gibt die Anzahl der Zeilen der eingelesenen Textdatei wieder. Die Methode war in einem
+     * ersten Entwurf wichtig fuer die Konstruktion der Ausgabe, wurde aber im spaeteren Verlauf des Designprozesses
+     * in die andere Methode integriert.
      */
     public static void stats_lines(String filename) throws IOException{
         long count = Files.lines(Paths.get(filename)).count();
@@ -17,8 +19,9 @@ public class constructOutput {
     }
 
     /**
-     * rd_lines liest die Datei zeilenweise aus und prueft, ob der Suchstring vorhanden ist.
-     * Schliesslich wird die Ausgabe konstruiert.
+     * rd_lines liest die Datei zeilenweise aus und prueft Zeile fuer Zeile, ob der Suchstring vorhanden ist.
+     * Gibt es mindestens einen Treffer, wird die gewuenschte Ausgabe im Format "Zeilennummer:Spaltennummer: Zeilentext"
+     * auf die Konsole geschrieben.
      */
     public void rd_lines(String filename, String suchstring){
 
