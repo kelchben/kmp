@@ -13,7 +13,7 @@ public class constructOutput {
      */
     public static void stats_lines(String filename) throws IOException{
         long count = Files.lines(Paths.get(filename)).count();
-        System.out.println(count);
+        System.out.print(count);
     }
 
     /**

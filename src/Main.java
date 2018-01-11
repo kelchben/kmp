@@ -10,5 +10,18 @@ public class Main {
             System.out.println("Error :(");
             System.exit(0);
         }
+
+     /*   preprocess kmpPreprocess = new preprocess();
+        String ausschnitt = "aba";
+        String textbeispiel = "aba okay aba";
+
+        kmp kmpsuche = new kmp();
+        colorize farbi = new colorize();
+        int[] preprocessList = kmpPreprocess.preprocessWord(ausschnitt);
+        kmpsuche.kmpSearch(textbeispiel, ausschnitt, preprocessList);
+        List<Integer> vorkommnisse= kmpsuche.kmpSearchList(textbeispiel, ausschnitt, preprocessList);
+        for(int i=0;i<vorkommnisse.size();i++){
+            System.out.println(vorkommnisse.get(i));
+        } ;*/
     }
 }
