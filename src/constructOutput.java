@@ -49,15 +49,12 @@ public class constructOutput {
 
             scanner.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+
+            System.out.println("File Not Found");
+            System.exit(0);
         }
+
 
     }
 }
 
-/*
-
-        if (suchi.naiveSearchList(line, suchstring).length != 0){
-        for (int h = 0; h < suchi.naiveSearchList(line, suchstring).length; h++){
-        System.out.println(zeilennummer + ":" + suchi.naiveSearchList(line, suchstring)[h]+ ": " +
-        mali.suchundfaerb(line,suchstring)    );*/
