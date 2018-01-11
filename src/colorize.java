@@ -17,7 +17,7 @@ public class colorize {
     }
 
     /**
-     * Mit ansiColorEscapeString lassen sich einzelne chars mit einer Färbung versehen.
+     * Mit ansiColorEscapeString lassen sich einzelne chars mit einer Faerbung versehen.
      */
     public static String ansiColorEscapeString(char buchstabe) {
         return("\u001B[30;47m" + buchstabe + "\u001B[0m");
@@ -25,7 +25,7 @@ public class colorize {
 
     /**
      * Mit ansiColorEscapeFoundNaive lassen sich per naivem Suchalgorithmus gefundene Textstellen
-     * mit einer Färbung versehen.
+     * mit einer Faerbung versehen.
      */
     public static String ansiColorEscapeFoundNaive(String ausgabe, int[] farbstellen) {
         Boolean gefunden = false;
