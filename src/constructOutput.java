@@ -30,11 +30,10 @@ public class constructOutput {
             while (scanner.hasNextLine()) {
 
                 String line = scanner.nextLine();
-                naiveSearch suchi = new naiveSearch();
                 preprocess prp = new preprocess();
                 kmp suchi2 = new kmp();
                 colorize malili =  new colorize();
-                searchandcolor mali = new searchandcolor();
+
                 zeilennummer++;
                 int[] prepross = prp.preprocessWord(suchstring);
                 if (suchi2.kmpSearchList(line, suchstring, prepross).size() != 0){

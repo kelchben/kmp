@@ -25,8 +25,7 @@ public class kmp {
 
 
     public static List<Integer> kmpSearchList(String text, String muster, int[] preprocess) {
-        //int[] tabelle = new int[muster.length()+1];
-        int i = 0, j = -1;
+                int i = 0, j = -1;
         List<Integer> vorkommnisse = new ArrayList<Integer>();
         while (i < text.length()) {
             while (j >= 0 && text.charAt(i) != muster.charAt(j)) {
@@ -41,7 +40,4 @@ public class kmp {
         }
         return vorkommnisse;
     }
-
-
-
 }
