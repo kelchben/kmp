@@ -38,7 +38,7 @@ public class constructOutput {
                 int[] prepross = prp.preprocessWord(suchstring);
                 if (suchi2.kmpSearchList(line, suchstring, prepross).size() != 0){
                     for(int s = 0; s < suchi2.kmpSearchList(line, suchstring, prepross).size(); s++){
-                        System.out.println(zeilennummer + ":" + (suchi2.kmpSearchList(line,suchstring,prepross).get(s)+1) + ": " +
+                        System.out.print(zeilennummer + ":" + (suchi2.kmpSearchList(line,suchstring,prepross).get(s)+1) + ": " +
                                 malili.ansiColorEscapeFoundKmp(line, suchi2.kmpSearchList(line,suchstring,prepross).get(s), suchstring.length()));
                     }
                 }

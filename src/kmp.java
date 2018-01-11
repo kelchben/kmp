@@ -17,7 +17,7 @@ public class kmp {
             i++;
             j++;
             if(j == muster.length()){
-                System.out.println("i="+ i + " und j=" + j);
+                System.out.print("i="+ i + " und j=" + j);
                 j = preprocess[j];
             }
         }

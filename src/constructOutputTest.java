@@ -35,7 +35,9 @@ public class constructOutputTest {
 
     @Test
     public void rd_lines() throws Exception{
-
+        constructOutput rdline = new constructOutput();
+        rdline.rd_lines("loremipsum.txt", "zwei");
+        assertEquals("1:22: hallo test test eins [30;47mz[0m[30;47mw[0m[30;47me[0m[30;47mi[0m", outContent.toString());
     }
 
     @After

@@ -24,9 +24,6 @@ public class colorizeTest {
         assertEquals("\u001B[30;47m" + 'u' + "\u001B[0m", tester.ansiColorEscapeString('u'));
         }
 
-
-
-
     @Test
     public void ansiColorEscapeFoundKmp() throws Exception {
     }
