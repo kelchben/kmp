@@ -15,7 +15,8 @@ public class Main {
         String[] hi = new String[1];
         String textbeispiel = "22ull222ul22u";
         String ausschnitt = "2";
-/*
+
+        /*
         try {
             textbeispiel = lesezeit.readbyline(hi);}
         catch (Exception e) {
