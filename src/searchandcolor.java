@@ -1,14 +1,15 @@
-/**
- * Created by kcots on 10.01.2018.
- */
+
 public class searchandcolor {
+    /**
+     * Verbindet Such- und Einfärbtätigkeiten
+     */
     public String suchundfaerb(String text, String muster) {
         String gesuchtundfaerbt = new String();
-        basicsearch suche = new basicsearch();
+        naiveSearch suche = new naiveSearch();
         colorize farbe = new colorize();
         String[] hi = new String[1];
 
-        gesuchtundfaerbt = farbe.faerbens(text, suche.search(text, muster));
+        gesuchtundfaerbt = farbe.ansiColorEscapeFoundNaive(text, suche.naiveSearchList(text, muster));
         return gesuchtundfaerbt;
     }
 

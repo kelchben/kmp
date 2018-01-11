@@ -1,16 +1,10 @@
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.stream.Collectors;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        basicsearch suche = new basicsearch();
+        naiveSearch suche = new naiveSearch();
         //ausleser lesezeit = new ausleser();
-        ausleser2 lesezeit2 = new ausleser2();
+        constructOutput lesezeit2 = new constructOutput();
         searchandcolor farbsuche = new searchandcolor();
         String[] hi = new String[1];
         String textbeispiel = "22ull222ul22u";
@@ -36,9 +30,9 @@ public class Main {
         System.out.println(farbsuche.suchundfaerb(textbeispiel, ausschnitt));
 
 
-        //suche.searchhier(textbeispiel, ausschnitt);
-        suche.searchhier(textbeispiel, ausschnitt);
-    // int[] ergebnis =   suche.search(textbeispiel, ausschnitt);
+        //suche.naiveSearchPrint(textbeispiel, ausschnitt);
+        suche.naiveSearchPrint(textbeispiel, ausschnitt);
+    // int[] ergebnis =   suche.naiveSearchList(textbeispiel, ausschnitt);
 
       /*  for (int x = 0; x < ergebnis.length; x++){
             System.out.println(Arrays.toString(ergebnis));
@@ -46,17 +40,17 @@ public class Main {
         }*/
         System.out.println("");
         colorize farbe = new colorize();
-        System.out.println(farbe.faerbString((char)65));
+        System.out.println(farbe.ansiColorEscapeString((char)65));
         preprocess ppp = new preprocess();
-        kmp suche = new kmp();
+        kmp suchi = new kmp();
 
-        System.out.println(Arrays.toString(ppp.pp("ababaa")));
-        System.out.println(Arrays.toString(ppp.pp("ababaa")));
+        System.out.println(Arrays.toString(ppp.preprocessWord("ababaa")));
+        suchi.kmpSearch("erere", "ere", ppp.preprocessWord("ere"));
     //    String wasfarbe = "asdfghhkk";
     //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Laenge");
      //   int[] orte = {6,7,8,9};
     //    System.out.println("orte hat" + orte.length + "laenge");
-    //    farbe.faerbens(wasfarbe, orte);
+    //    farbe.ansiColorEscapeFoundNaive(wasfarbe, orte);
 
       /*  Main dings = new Main();
         String[] hi = new String[1];

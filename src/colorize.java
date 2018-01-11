@@ -1,22 +1,40 @@
-/**
- * Created by kcots on 10.01.2018.
- */
+import org.junit.Test;
+
+import static junit.framework.TestCase.assertEquals;
+
 public class colorize {
+
+    @Test
+    public void istBuchstabeRichtigGefaerbt() {
+        colorize tester = new colorize(); // MyClass is tested
+
+        // assert statements
+        assertEquals("\u001B[30;47m" + "u" + "\u001B[0m", tester.ansiColorEscapeString('u'));
+    }
+
     public static void faerben(char buchstabe) {
         System.out.print("\u001B[30;47m" + buchstabe + "\u001B[0m");
     }
-    public static String faerbString(char buchstabe) {
+
+    /**
+     * Mit ansiColorEscapeString lassen sich einzelne chars mit einer Färbung versehen.
+     */
+    public static String ansiColorEscapeString(char buchstabe) {
         return("\u001B[30;47m" + buchstabe + "\u001B[0m");
     }
 
-    public static String faerbens(String ausgabe, int[] farbstellen) {
+    /**
+     * Mit ansiColorEscapeFoundNaive lassen sich per naivem Suchalgorithmus gefundene Textstellen
+     * mit einer Färbung versehen.
+     */
+    public static String ansiColorEscapeFoundNaive(String ausgabe, int[] farbstellen) {
         Boolean gefunden = false;
         String gefaerbt = new String();
         for (int i = 0; i < ausgabe.length(); i++) {
                 gefunden = false;
                 for (int j = 0; j < farbstellen.length && !gefunden; j++) {
                     if (i == farbstellen[j]-1) {
-                        gefaerbt = gefaerbt + faerbString(ausgabe.charAt(i));
+                        gefaerbt = gefaerbt + ansiColorEscapeString(ausgabe.charAt(i));
                         gefunden = true;
                     break;
                     }
@@ -30,18 +48,4 @@ public class colorize {
         }
         return gefaerbt;
     }
-
-
 }
-      /*  for (int i = 0; i < ausgabe.length(); i++) {
-            for (int j = 0; j < farbstellen.length; j++) {
-                if (i == farbstellen[j]) {
-                    faerben(ausgabe.charAt(i));
-                }
-                else {
-                    System.out.print(ausgabe.charAt(i));break;
-                }
-            }
-        }
-    }*/
-

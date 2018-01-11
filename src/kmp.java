@@ -1,8 +1,11 @@
-/**
- * Created by kcots on 11.01.2018.
- */
+
 public class kmp {
-    public static void pp(String text, String muster, int[] preprocess) {
+    /**
+     * Der Knuth-Morris-Pratt-Algorithmus (KMP) greift auf die präprozessierte Liste aus der preprocessWord-Methode
+     * der preprocess-Klasse zu. Er springt bei Nichtfinden des Suchstrings gegebenfalls zum anderen "Rand" des bisher
+     * gefundenen Strings. So
+     */
+    public static void kmpSearch(String text, String muster, int[] preprocess) {
         //int[] tabelle = new int[muster.length()+1];
         int i = 0, j = -1;
             while (i < text.length()) {
@@ -12,7 +15,7 @@ public class kmp {
             i++;
             j++;
             if(j == muster.length()){
-                System.out.println("i="i + " und j=" + j);
+                System.out.println("i="+ i + " und j=" + j);
                 j = preprocess[j];
             }
         }

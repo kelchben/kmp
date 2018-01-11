@@ -1,14 +1,11 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 
-/**
- * Created by kcots on 10.01.2018.
- */
-public class basicsearch {
-    public static int[] search(String text, String muster) {
+public class naiveSearch {
+    /**
+     * Einfache Suche zum Testen der Darstellfunktion
+     */
+    public static int[] naiveSearchList(String text, String muster) {
         int[] liste = new int[0];
         int i = 0;
         int j;
@@ -32,8 +29,8 @@ public class basicsearch {
         }
     return liste;
     }
-    public static void searchhier(String text, String muster) {
-        System.out.println(Arrays.toString(search(text, muster)));
+    public static void naiveSearchPrint(String text, String muster) {
+        System.out.println(Arrays.toString(naiveSearchList(text, muster)));
     }
 
 }
