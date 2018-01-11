@@ -1,7 +1,7 @@
 
 public class kmp {
     /**
-     * Der Knuth-Morris-Pratt-Algorithmus (KMP) greift auf die präprozessierte Liste aus der preprocessWord-Methode
+     * Der Knuth-Morris-Pratt-Algorithmus (KMP) greift auf die praeprozessierte Liste aus der preprocessWord-Methode
      * der preprocess-Klasse zu. Er springt bei Nichtfinden des Suchstrings gegebenfalls zum anderen "Rand" des bisher
      * gefundenen Strings. So
      */

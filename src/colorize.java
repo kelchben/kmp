@@ -9,7 +9,7 @@ public class colorize {
         colorize tester = new colorize(); // MyClass is tested
 
         // assert statements
-        assertEquals("\u001B[30;47m" + "u" + "\u001B[0m", tester.ansiColorEscapeString('u'));
+        assertEquals("\u001B[30;47m" + 'u' + "\u001B[0m", tester.ansiColorEscapeString('u'));
     }
 
     public static void faerben(char buchstabe) {

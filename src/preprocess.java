@@ -1,10 +1,8 @@
-/**
- * Created by kcots on 11.01.2018.
- */
+
 public class preprocess {
     /**
-     * Die Methode preprocessWord ermittelt den maximalen Rand für jedes Zeichen des zu suchenden Strings.
-     * So lassen sich später Suchdurchgänge einsparen, indem man bei erfolgloser Suche bis zum anderen Rand springt, um
+     * Die Methode preprocessWord ermittelt den maximalen Rand fuer jedes Zeichen des zu suchenden Strings.
+     * So lassen sich spaeter Suchdurchgaenge einsparen, indem man bei erfolgloser Suche bis zum anderen Rand springt, um
      * die Suche fortzusetzen. Aus dem
      */
     public static int[] preprocessWord(String muster) {
