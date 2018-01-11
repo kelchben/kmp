@@ -47,6 +47,9 @@ public class Main {
         System.out.println("");
         colorize farbe = new colorize();
         System.out.println(farbe.faerbString((char)65));
+        preprocess ppp = new preprocess();
+
+        System.out.println(Arrays.toString(ppp.pp("ababaa")));
     //    String wasfarbe = "asdfghhkk";
     //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Laenge");
      //   int[] orte = {6,7,8,9};
