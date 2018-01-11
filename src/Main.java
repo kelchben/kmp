@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,8 +8,8 @@ public class Main {
         constructOutput lesezeit2 = new constructOutput();
         searchandcolor farbsuche = new searchandcolor();
         String[] hi = new String[1];
-        String textbeispiel = "22ull222ul22u";
-        String ausschnitt = "2";
+        String textbeispiel = "k22ull222ul22u";
+        String ausschnitt = "22";
 
         /*
         try {
@@ -27,6 +28,19 @@ public class Main {
             System.out.println("Errorstats:(");
             System.exit(0);
         }
+
+        preprocess kmpPreprocess = new preprocess();
+        kmp kmpsuche = new kmp();
+        colorize farbi = new colorize();
+
+        int[] preprocessList = kmpPreprocess.preprocessWord(ausschnitt);
+
+        List<Integer> vorkommnisse= kmpsuche.kmpSearchList(textbeispiel, ausschnitt, preprocessList);
+        for(int i=0;i<vorkommnisse.size();i++){
+            System.out.println(vorkommnisse.get(i));
+        } ;
+        System.out.println(        farbi.ansiColorEscapeFoundKmp("asdfghjkl", 3, 3));
+
     //    System.out.println(farbsuche.suchundfaerb(textbeispiel, ausschnitt));
 
 
@@ -41,11 +55,17 @@ public class Main {
      //   System.out.println("");
      //   colorize farbe = new colorize();
       //  System.out.println(farbe.ansiColorEscapeString((char)65));
+
+
      //   preprocess ppp = new preprocess();
      //   kmp suchi = new kmp();
 
       //  System.out.println(Arrays.toString(ppp.preprocessWord("ababaa")));
       //  suchi.kmpSearch("erere", "ere", ppp.preprocessWord("ere"));
+
+
+
+
     //    String wasfarbe = "asdfghhkk";
     //    System.out.println("Wasfarbe hat " + wasfarbe.length() + "Laenge");
      //   int[] orte = {6,7,8,9};

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class kmp {
     /**
@@ -20,4 +22,26 @@ public class kmp {
             }
         }
     }
+
+
+    public static List<Integer> kmpSearchList(String text, String muster, int[] preprocess) {
+        //int[] tabelle = new int[muster.length()+1];
+        int i = 0, j = -1;
+        List<Integer> vorkommnisse = new ArrayList<Integer>();
+        while (i < text.length()) {
+            while (j >= 0 && text.charAt(i) != muster.charAt(j)) {
+                j = preprocess[j];
+            }
+            i++;
+            j++;
+            if(j == muster.length()){
+                    vorkommnisse.add(i-j);
+                    j = preprocess[j];
+            }
+        }
+        return vorkommnisse;
+    }
+
+
+
 }

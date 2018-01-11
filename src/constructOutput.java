@@ -31,15 +31,22 @@ public class constructOutput {
 
                 String line = scanner.nextLine();
                 naiveSearch suchi = new naiveSearch();
+                preprocess prp = new preprocess();
+                kmp suchi2 = new kmp();
+                colorize malili =  new colorize();
                 searchandcolor mali = new searchandcolor();
                 zeilennummer++;
-                if (suchi.naiveSearchList(line, suchstring).length != 0){
-                    for (int h = 0; h < suchi.naiveSearchList(line, suchstring).length; h++){
-                        System.out.println(zeilennummer + ":" + suchi.naiveSearchList(line, suchstring)[h]+ ": " +
-                                mali.suchundfaerb(line,suchstring)    );
+                int[] prepross = prp.preprocessWord(suchstring);
+                if (suchi2.kmpSearchList(line, suchstring, prepross).size() != 0){
+                    for(int s = 0; s < suchi2.kmpSearchList(line, suchstring, prepross).size(); s++){
+                        System.out.println(zeilennummer + ":" + (suchi2.kmpSearchList(line,suchstring,prepross).get(s)+1) + ": " +
+                                malili.ansiColorEscapeFoundKmp(line, suchi2.kmpSearchList(line,suchstring,prepross).get(s), suchstring.length()));
                     }
                 }
+
             }
+
+
             scanner.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -47,3 +54,10 @@ public class constructOutput {
 
     }
 }
+
+/*
+
+        if (suchi.naiveSearchList(line, suchstring).length != 0){
+        for (int h = 0; h < suchi.naiveSearchList(line, suchstring).length; h++){
+        System.out.println(zeilennummer + ":" + suchi.naiveSearchList(line, suchstring)[h]+ ": " +
+        mali.suchundfaerb(line,suchstring)    );*/

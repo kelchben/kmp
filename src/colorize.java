@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class colorize {
 
 
@@ -37,4 +39,34 @@ public class colorize {
         }
         return gefaerbt;
     }
+
+
+    public static String ansiColorEscapeFoundKmp(String ausgabe, int farbStelle, int musterLaenge) {
+        Boolean gefunden = false;
+
+        String gefaerbt = new String();
+        if (farbStelle == 0){
+        for (int i = 0; i < musterLaenge; i++) {
+            gefaerbt = gefaerbt + ansiColorEscapeString(ausgabe.charAt(i));
+        }
+        for (int i = musterLaenge; i < ausgabe.length(); i++) {
+            gefaerbt = gefaerbt + ausgabe.charAt(i);
+        }return gefaerbt;
+       }
+
+        for (int j = 0; j < farbStelle; j++) {
+            gefaerbt = gefaerbt + ausgabe.charAt(j);
+        }
+        for (int i = farbStelle; i < farbStelle + musterLaenge; i++)
+            gefaerbt = gefaerbt + ansiColorEscapeString(ausgabe.charAt(i));
+
+        for (int k = farbStelle + musterLaenge; k < ausgabe.length(); k++) {
+            gefaerbt = gefaerbt + ausgabe.charAt(k);
+        }
+
+        return gefaerbt;
+    }
+
+
+
 }

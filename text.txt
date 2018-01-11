@@ -1,4 +1,3 @@
-HI22
-
-
-HI422
+ich aba in ababaaba suche, wird nur
+*aba*baaba ausgegeben
+und sonst?

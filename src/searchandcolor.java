@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class searchandcolor {
     /**
@@ -12,5 +13,21 @@ public class searchandcolor {
         gesuchtundfaerbt = farbe.ansiColorEscapeFoundNaive(text, suche.naiveSearchList(text, muster));
         return gesuchtundfaerbt;
     }
+    /*
+    public String suchundfaerbKmp(String text, String muster) {
+        String gesuchtundfaerbtkmp = new String();
+        preprocess kmpPreprocess = new preprocess();
+        kmp kmpsuche = new kmp();
+        colorize farbe = new colorize();
+        String[] hi = new String[1];
+        int[] preprocessList = kmpPreprocess.preprocessWord(muster);
+        List<Integer> gefunden = kmpsuche.kmp(text, muster, preprocessList);
+
+
+        gesuchtundfaerbtkmp = farbe.ansiColorEscapeFoundKmp(text, )
+        (text, kmpsuche.kmpSearch(text, muster, preprocessList););
+        return gesuchtundfaerbtkmp;
+    }*/
+
 
 }
